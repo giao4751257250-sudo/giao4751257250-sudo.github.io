@@ -4,6 +4,10 @@
 
 网站使用纯 HTML + CSS + 原生 JavaScript 编写，没有框架、没有安装依赖、没有构建步骤。内容集中存放在一个 JSON 文件中，适合直接托管到 GitHub Pages。
 
+在线访问：[https://giao4751257250-sudo.github.io/](https://giao4751257250-sudo.github.io/)
+
+GitHub 仓库：[giao4751257250-sudo/giao4751257250-sudo.github.io](https://github.com/giao4751257250-sudo/giao4751257250-sudo.github.io)
+
 ## 现在已经具备
 
 - 简约、克制的学术刊物式视觉，黑白为主，使用低饱和砖红与鼠尾草绿作点缀；
@@ -207,6 +211,12 @@ python3 -m http.server 8000
 然后访问 `http://localhost:8000`。
 
 ## 发布到 GitHub Pages
+
+当前版本已经部署到 GitHub Pages，公开网址为：
+
+```text
+https://giao4751257250-sudo.github.io/
+```
 
 完全不写命令、只需点击的图文式步骤见 [`DEPLOYMENT_GUIDE.md`](DEPLOYMENT_GUIDE.md)。
 
