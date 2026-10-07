@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f3f0e8" />
+    <meta
+      name="description"
+      content="陈强的个人作品集——复旦大学经济学院 2026 级新生，记录项目、阅读、思考与长期成长。"
+    />
+    <meta name="author" content="陈强" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="陈强｜个人作品集" />
+    <meta
+      property="og:description"
+      content="以长期主义为坐标，在经济学、人文与技术之间持续探索。"
+    />
+    <meta property="og:url" content="https://giao4751257250-sudo.github.io/" />
+    <meta property="og:image" content="https://giao4751257250-sudo.github.io/assets/images/avatar.jpg" />
+    <meta property="og:image:alt" content="陈强的个人头像" />
+    <link rel="canonical" href="https://giao4751257250-sudo.github.io/" />
+    <title>陈强｜个人作品集</title>
+    <link rel="icon" type="image/jpeg" href="assets/images/avatar.jpg" />
+    <link rel="apple-touch-icon" href="assets/images/avatar.jpg" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/app.js" defer></script>
+  </head>
+  <body>
+    <!-- 键盘用户可以跳过导航，直接进入正文。 -->
+    <a class="skip-link" href="#main-content">跳到正文</a>
+    <div class="reading-progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header" data-header>
+      <a class="wordmark" href="#home" aria-label="返回首页">
+        <span>CQ</span>
+        <small>Portfolio</small>
+      </a>
+
+      <nav class="desktop-nav" aria-label="主要导航">
+        <a href="#journal">文章</a>
+        <a href="#projects">项目</a>
+        <a href="#reading">兴趣</a>
+        <a href="#about">关于</a>
+        <a href="#journey">履历</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="search-toggle" type="button" data-search-open aria-label="搜索网站内容">
+          <span aria-hidden="true">⌕</span>
+          <span class="search-label">搜索</span>
+        </button>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换深浅色主题">
+          <span class="theme-icon" aria-hidden="true">◐</span>
+          <span class="theme-label">深色</span>
+        </button>
+        <button
+          class="menu-toggle"
+          type="button"
+          data-menu-toggle
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span><span></span>
+          <span class="sr-only">打开导航菜单</span>
+        </button>
+      </div>
+
+      <nav class="mobile-menu" id="mobile-menu" data-mobile-menu aria-label="移动端导航">
+        <a href="#journal">最近文章</a>
+        <a href="#about">关于我</a>
+        <a href="#projects">项目</a>
+        <a href="#reading">阅读与影音</a>
+        <a href="#workbench">工作台</a>
+        <a href="#journey">个人履历</a>
+        <a href="#contact">联系方式</a>
+        <button type="button" data-search-open>搜索全部内容 <span>⌕</span></button>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- 首页首屏：文案和头像均由 data/portfolio.json 驱动。 -->
+      <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+        <div class="hero-edition" data-reveal>
+          <span>PERSONAL EDITION</span>
+          <span>VOL. 01 · <b data-current-year>2026</b></span>
+        </div>
+
+        <div class="hero-grid">
+          <div class="hero-copy" data-reveal>
+            <p class="eyebrow" id="hero-kicker">经济 · 人文 · 技术</p>
+            <h1 id="hero-title">
+              <span data-profile-name>陈强</span><i>。</i>
+            </h1>
+            <p class="hero-signature" data-profile-english-name>Qiang Chen</p>
+            <p class="hero-role" data-profile-role>复旦大学经济学院 · 2026 级本科新生</p>
+            <p class="hero-intro" data-profile-intro>
+              我在经济学的秩序、人文的尺度与技术的可能性之间，寻找值得长期投入的问题。
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">查看项目 <span>↘</span></a>
+              <a class="button button-text" href="#contact">与我联系 <span>→</span></a>
+            </div>
+          </div>
+
+          <aside class="hero-aside" data-reveal>
+            <figure class="portrait-frame">
+              <div class="portrait-placeholder" aria-hidden="true">
+                <span>CQ</span>
+                <small>替换 avatar.jpg</small>
+              </div>
+              <img
+                src="assets/images/avatar.jpg"
+                alt="陈强的头像"
+                data-avatar
+              />
+              <figcaption>
+                <span>Shanghai, China</span>
+                <span>Open to possibilities</span>
+              </figcaption>
+            </figure>
+            <blockquote data-profile-slogan>
+              “选择定义稀缺资源的去向，时间则检验每一种选择的价值。”
+            </blockquote>
+          </aside>
+        </div>
+
+        <a class="scroll-cue" href="#journal" aria-label="继续浏览最近文章">
+          <span>SCROLL TO READ</span>
+          <i aria-hidden="true"></i>
+        </a>
+      </section>
+
+      <!-- 参考优秀个人博客的内容节奏，把最近思考放到首屏之后。 -->
+      <section class="journal section-shell ruled-section" id="journal" aria-labelledby="journal-title">
+        <header class="compact-heading" data-reveal>
+          <div class="compact-title">
+            <span class="section-number">01</span>
+            <div>
+              <p class="eyebrow">RECENT NOTES</p>
+              <h2 id="journal-title">最近写下</h2>
+            </div>
+          </div>
+          <a href="#workbench">全部学习与思考记录 ↘</a>
+        </header>
+        <div class="journal-list" data-recent-notes aria-live="polite">
+          <p class="loading-note">正在读取最近记录…</p>
+        </div>
+      </section>
+
+      <section class="about section-shell ruled-section" id="about" aria-labelledby="about-title">
+        <header class="section-heading" data-reveal>
+          <div>
+            <span class="section-number">02</span>
+            <p class="eyebrow">ABOUT ME</p>
+          </div>
+          <h2 id="about-title">在长期尺度上，<br />成为一个丰富而清醒的人。</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-statement" data-reveal>
+            <p class="dropcap" data-about-lead>
+              成长不是把生活压缩成一张履历，而是在好奇心、判断力与行动之间，建立稳定的连接。
+            </p>
+            <p data-about-body>
+              我关注经济与社会如何运行，也热衷于用 AI 和编程把想法变成工具。保持理性，也保留热情；重视结果，也珍惜过程中的人和故事。
+            </p>
+          </div>
+
+          <div class="about-facts" data-reveal>
+            <article>
+              <span>教育</span>
+              <strong data-education-school>复旦大学经济学院</strong>
+              <p data-education-detail>2026 级本科新生</p>
+            </article>
+            <article>
+              <span>当前主线</span>
+              <strong data-profile-goal>以扎实学习为主线</strong>
+              <p>长期主义 · 稳定推进 · 保持开放</p>
+            </article>
+          </div>
+
+          <div class="values-block" data-reveal>
+            <p class="eyebrow">PERSONAL COMPASS</p>
+            <ol data-values-list>
+              <li><span>01</span><div><strong>长期主义</strong><p>让今天的选择，经得起更长时间的复利。</p></div></li>
+              <li><span>02</span><div><strong>理性与温度</strong><p>用证据理解世界，用同理心面对具体的人。</p></div></li>
+              <li><span>03</span><div><strong>知行合一</strong><p>把好奇心转化为作品，把思考落实为行动。</p></div></li>
+            </ol>
+          </div>
+
+          <div class="interests-block" data-reveal>
+            <p class="eyebrow">LIFE OUTSIDE THE DESK</p>
+            <div class="interest-list" data-interests-list>
+              <span>羽毛球</span><span>跑步</span><span>健身</span><span>听音乐</span><span>下棋</span><span>探索 AI 工具</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section-shell ruled-section" id="projects" aria-labelledby="projects-title">
+        <header class="section-heading" data-reveal>
+          <div>
+            <span class="section-number">03</span>
+            <p class="eyebrow">SELECTED PROJECTS</p>
+          </div>
+          <h2 id="projects-title">把问题做成作品，<br />让想法接受现实检验。</h2>
+        </header>
+
+        <div class="projects-intro" data-reveal>
+          <p>这里收录正在生长的项目。它们不只是“完成了什么”，也记录我如何理解问题、选择工具并持续迭代。</p>
+          <span data-project-count>02 个项目</span>
+        </div>
+        <div class="project-list" data-projects-list aria-live="polite">
+          <p class="loading-note">正在读取项目数据…</p>
+        </div>
+      </section>
+
+      <section class="library section-shell ruled-section" id="reading" aria-labelledby="reading-title">
+        <header class="section-heading" data-reveal>
+          <div>
+            <span class="section-number">04</span>
+            <p class="eyebrow">CULTURAL NOTEBOOK</p>
+          </div>
+          <h2 id="reading-title">阅读世界，<br />也被世界重新阅读。</h2>
+        </header>
+
+        <div class="hobby-intro" data-reveal>
+          <div><p class="eyebrow">OFF THE DESK</p><h3>生活的侧页</h3></div>
+          <p>运动、音乐、棋局与新工具，让理性之外仍有节奏、身体感和真实的好奇心。</p>
+        </div>
+        <div class="hobby-shelf" data-hobby-shelf data-reveal></div>
+
+        <div class="library-grid">
+          <section class="collection-panel" aria-labelledby="books-title" data-reveal>
+            <header>
+              <div>
+                <span class="collection-mark">B</span>
+                <div><p class="eyebrow">BOOKS</p><h3 id="books-title">阅读书单</h3></div>
+              </div>
+              <span class="collection-count" data-books-count>00</span>
+            </header>
+            <div class="book-list" data-books-list>
+              <p class="loading-note">正在读取书单…</p>
+            </div>
+          </section>
+
+          <section class="collection-panel" aria-labelledby="media-title" data-reveal>
+            <header>
+              <div>
+                <span class="collection-mark">M</span>
+                <div><p class="eyebrow">FILM & MUSIC</p><h3 id="media-title">影音收藏</h3></div>
+              </div>
+              <span class="collection-count" data-media-count>00</span>
+            </header>
+            <div class="media-list" data-media-list>
+              <p class="loading-note">正在读取影音清单…</p>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="workbench section-shell ruled-section" id="workbench" aria-labelledby="workbench-title">
+        <header class="section-heading" data-reveal>
+          <div>
+            <span class="section-number">05</span>
+            <p class="eyebrow">WORKBUDDY NOTES</p>
+          </div>
+          <h2 id="workbench-title">让学习留下证据，<br />让思考形成路径。</h2>
+        </header>
+
+        <div class="sync-panel" data-reveal>
+          <div class="sync-copy">
+            <span class="status-dot" aria-hidden="true"></span>
+            <div>
+              <p class="eyebrow">JSON BRIDGE</p>
+              <h3>与 WorkBuddy 数据互通</h3>
+              <p>可直接读取本仓库数据，也能导入 WorkBuddy 导出的 JSON 备份；浏览器会在本机记住导入结果。</p>
+            </div>
+          </div>
+          <div class="sync-actions">
+            <button class="button button-primary" type="button" data-import-button>导入 WorkBuddy JSON</button>
+            <input id="workbuddy-file" type="file" accept="application/json,.json" data-workbuddy-file hidden />
+            <button class="button button-quiet" type="button" data-export-public hidden>下载公开数据副本</button>
+            <button class="button button-quiet" type="button" data-clear-import hidden>恢复公开数据</button>
+          </div>
+          <p class="sync-status" data-sync-status role="status">当前展示：仓库公开数据</p>
+        </div>
+
+        <div class="notes-toolbar" data-reveal>
+          <div class="filter-tabs" role="group" aria-label="筛选笔记">
+            <button class="is-active" type="button" data-note-filter="all">全部</button>
+            <button type="button" data-note-filter="学习">学习</button>
+            <button type="button" data-note-filter="思考">思考</button>
+            <button type="button" data-note-filter="研究">研究</button>
+          </div>
+          <span data-note-count>0 则记录</span>
+        </div>
+        <div class="notes-grid" data-notes-list aria-live="polite">
+          <p class="loading-note">正在读取工作台笔记…</p>
+        </div>
+      </section>
+
+      <section class="journey section-shell ruled-section" id="journey" aria-labelledby="journey-title">
+        <header class="section-heading" data-reveal>
+          <div>
+            <span class="section-number">06</span>
+            <p class="eyebrow">JOURNEY & DIRECTION</p>
+          </div>
+          <h2 id="journey-title">履历不是终点，<br />而是方向留下的轨迹。</h2>
+        </header>
+
+        <div class="journey-layout">
+          <div class="journey-intro" data-reveal>
+            <p class="eyebrow">A SHORT RESUME</p>
+            <p>现在仍是起点。我更愿意展示正在建立的能力、已经落地的作品，以及下一步真正想抵达的地方。</p>
+            <a class="button button-text" href="mailto:giao4751257250@163.com">索取完整简历 <span>↗</span></a>
+          </div>
+          <div class="timeline" data-journey-list data-reveal>
+            <p class="loading-note">正在读取履历…</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
+        <div class="contact-kicker" data-reveal>
+          <span>07</span>
+          <p class="eyebrow">LET'S CONNECT</p>
+        </div>
+        <div class="contact-grid">
+          <div data-reveal>
+            <h2 id="contact-title">好的对话，<br />常常是一切的开始。</h2>
+            <p>如果你想交流经济学、AI 工具、项目合作，或只是分享一本好书，欢迎来信。</p>
+          </div>
+          <div class="contact-list" data-contacts-list data-reveal>
+            <p class="loading-note">正在读取联系方式…</p>
+          </div>
+        </div>
+        <footer>
+          <p>© <span data-current-year>2026</span> <span data-profile-name>陈强</span>. Built with curiosity and plain code.</p>
+          <a href="#home">回到顶部 ↑</a>
+        </footer>
+      </section>
+    </main>
+
+    <button class="back-to-top" type="button" data-back-to-top aria-label="返回页面顶部">↑</button>
+
+    <!-- 全站搜索：索引项目、书影音、笔记、兴趣与履历，不需要第三方服务。 -->
+    <div class="search-overlay" data-search-overlay hidden>
+      <section class="search-dialog" role="dialog" aria-modal="true" aria-labelledby="search-title">
+        <header>
+          <div>
+            <p class="eyebrow">SEARCH THE ARCHIVE</p>
+            <h2 id="search-title">寻找一条线索</h2>
+          </div>
+          <button type="button" data-search-close aria-label="关闭搜索">×</button>
+        </header>
+        <label class="search-field">
+          <span class="sr-only">输入搜索关键词</span>
+          <input type="search" data-search-input placeholder="搜索项目、笔记、书影音或兴趣…" autocomplete="off" />
+          <kbd>ESC</kbd>
+        </label>
+        <p class="search-hint">试试“AI”“经济学”“翻译”或“长期主义”</p>
+        <div class="search-results" data-search-results aria-live="polite"></div>
+      </section>
+    </div>
+
+    <noscript>
+      <div class="noscript-note">这个网站需要启用 JavaScript 才能从 JSON 文件读取内容。</div>
+    </noscript>
+  </body>
+</html>

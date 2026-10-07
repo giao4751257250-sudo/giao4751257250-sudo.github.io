@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "version": "portfolio-2.0.0",
+  "exportedAt": "2026-10-07T00:00:00.000Z",
+  "lastUpdated": "2026-10-07",
+  "_guide": {
+    "note": "这是网站唯一的公开内容数据源。修改文字后保存并上传到 GitHub，无需修改 HTML。",
+    "avatar": "头像不写在 JSON 中，请直接把微信头像命名为 avatar.jpg，放到 assets/images/ 文件夹。",
+    "links": "不知道的链接可以保留为空字符串，网页会自动隐藏空链接。"
+  },
+  "profile": {
+    "name": "陈强",
+    "englishName": "Qiang Chen",
+    "identity": "复旦大学经济学院 2026 级本科新生 · 长期主义成长者",
+    "role": "复旦大学经济学院 · 2026 级本科新生",
+    "goal": "以扎实学习与长期成长为主线",
+    "focus": "经济学 · 编程与 AI · 健身减脂 · 羽毛球 · 阅读复盘",
+    "intro": "我在经济学的秩序、人文的尺度与技术的可能性之间，寻找值得长期投入的问题。",
+    "slogan": "选择定义稀缺资源的去向，时间则检验每一种选择的价值。",
+    "aboutLead": "成长不是把生活压缩成一张履历，而是在好奇心、判断力与行动之间，建立稳定的连接。",
+    "aboutBody": "我关注经济与社会如何运行，也热衷于用 AI 和编程把想法变成工具。保持理性，也保留热情；重视结果，也珍惜过程中的人和故事。",
+    "education": {
+      "school": "复旦大学经济学院",
+      "detail": "2026 级本科新生"
+    },
+    "values": [
+      {
+        "title": "长期主义",
+        "description": "让今天的选择，经得起更长时间的复利。"
+      },
+      {
+        "title": "理性与温度",
+        "description": "用证据理解世界，用同理心面对具体的人。"
+      },
+      {
+        "title": "知行合一",
+        "description": "把好奇心转化为作品，把思考落实为行动。"
+      }
+    ],
+    "interests": [
+      "羽毛球",
+      "跑步",
+      "健身",
+      "听音乐",
+      "下棋",
+      "探索 AI 工具"
+    ]
+  },
+  "projects": [
+    {
+      "id": "floating-translator",
+      "title": "浏览器悬浮翻译插件",
+      "visualLabel": "译",
+      "visualCaption": "READ WITHOUT BREAKING FOCUS",
+      "year": "2026",
+      "status": "核心项目",
+      "description": "面向网页阅读场景的轻量翻译工具。通过选词与悬浮交互减少页面跳转，让跨语言信息获取更连贯、更专注。",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "Vanilla JS",
+        "Browser Extension API"
+      ],
+      "links": [
+        {
+          "label": "项目主页",
+          "url": ""
+        },
+        {
+          "label": "源代码",
+          "url": "https://github.com/giao4751257250-sudo/mac-web-translator"
+        }
+      ]
+    },
+    {
+      "id": "workbuddy",
+      "title": "WorkBuddy 成长工作台",
+      "visualLabel": "WB",
+      "visualCaption": "MAKE PROGRESS VISIBLE",
+      "image": "assets/images/workbuddy-preview.jpg",
+      "year": "2026",
+      "status": "持续迭代",
+      "description": "一个本地优先的长期主义成长系统，把待办、日程、习惯、学习与复盘组织成可持续的个人工作流，并以 JSON 保障数据可携带。",
+      "technologies": [
+        "React",
+        "Local-first",
+        "JSON",
+        "PWA",
+        "AI Assistant"
+      ],
+      "links": [
+        {
+          "label": "打开工作台",
+          "url": ""
+        },
+        {
+          "label": "源代码",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "books": [],
+  "media": [],
+  "workbenchNotes": [
+    {
+      "id": "note-data-bridge",
+      "category": "研究",
+      "date": "2026-10-07",
+      "title": "静态网站如何与个人工作台互通",
+      "summary": "用公开 JSON 承担内容源，用 WorkBuddy 备份导入承担本机同步，在不引入数据库的前提下平衡可维护性、隐私与部署成本。"
+    },
+    {
+      "id": "note-workbuddy-v21",
+      "category": "思考",
+      "date": "2026-10-07",
+      "title": "记录不是终点，形成反馈闭环才是",
+      "summary": "WorkBuddy V2.1 将零散想法整理为可确认的结构化草稿，再写入任务、学习与复盘模块，让 AI 服务于判断，而不是替代判断。"
+    },
+    {
+      "id": "note-translation-tool",
+      "category": "学习",
+      "date": "2026-10-07",
+      "title": "从悬浮翻译理解“少一步”的价值",
+      "summary": "工具的体验未必来自更多功能。减少一次复制、一次切换页面，往往就是对注意力最实际的保护。"
+    }
+  ],
+  "journey": [
+    {
+      "period": "2026 — 现在",
+      "title": "复旦大学经济学院",
+      "subtitle": "本科 · 经济学",
+      "description": "以经济学训练为学业主线，持续建立数学基础、研究意识与对真实世界的观察能力。",
+      "status": "CURRENT"
+    },
+    {
+      "period": "持续进行",
+      "title": "独立项目与 AI 实践",
+      "subtitle": "产品思考 · 原生 Web · AI 工具",
+      "description": "围绕真实使用场景开发浏览器翻译插件与 WorkBuddy，在做中学习产品、设计和工程。",
+      "status": "BUILDING"
+    },
+    {
+      "period": "长期方向",
+      "title": "经济学 × 技术 × 人文",
+      "subtitle": "研究 · 创业 · 公共表达",
+      "description": "探索技术如何改变信息、选择与协作，并把持续学习沉淀为可交流的作品与思想。",
+      "status": "NEXT"
+    }
+  ],
+  "contacts": [
+    {
+      "label": "Email",
+      "value": "giao4751257250@163.com",
+      "url": "mailto:giao4751257250@163.com"
+    },
+    {
+      "label": "GitHub",
+      "value": "github.com/giao4751257250-sudo",
+      "url": "https://github.com/giao4751257250-sudo"
+    }
+  ]
+}
